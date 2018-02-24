@@ -1,0 +1,20 @@
+{
+  "name": "varnashw3",
+  "version": "1.0.0",
+  "description": "Homework 3 for IS445",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvarnas/varnashw3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvarnas/varnashw3/issues"
+  },
+  "homepage": "https://github.com/mvarnas/varnashw3#readme"
+}
