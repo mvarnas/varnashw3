@@ -1,14 +1,14 @@
 const startStr = prompt('Enter the start')
 const start= parseInt(startStr,10)
 
-alert(start)
-
 const endStr = prompt('Enter the end')
 const end= parseInt(endStr,10)
 
 const stepStr = prompt('Enter the step')
 const step = parseInt(stepStr,10)
-
+// if step==0 {
+//     document.write('Invalid integer input');
+// }
 var min = start;
 var max = end;
 var arr = [];
@@ -17,13 +17,16 @@ for (var i = min; i <= max; i=i+step)
 
 var total=0;
 for (var i in arr){
-    total +=arr[i];
+total +=arr[i];
 }
 
-const output = document.getElementById("output")
-output.innerHTML = 'The generated array is ' + arr;
+var binArr =[];
+for (var i=0, len=arr.length; i<len; i++) {
+    total+=arr[i]; binArr.push(arr[i].toString(2))
+}
 
-const outputSum = document.getElementById("outputSum")
-outputSum.innerHTML = 'The sum is ' + total
-
-
+document.write('The generated array is ' + arr  + '<br>') ; 
+document.write('The sum is ' + total + '<br>' ); 
+document.write('The binary of absolute element values are: ' + binArr);
+// const output2 = document.getElementById("output2")
+// output2.innerHTML = 'The sum is ' + total;
