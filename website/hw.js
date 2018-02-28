@@ -15,5 +15,15 @@ var arr = [];
 for (var i = min; i <= max; i=i+step)
     arr.push(i);
 
+var total=0;
+for (var i in arr){
+    total +=arr[i];
+}
+
 const output = document.getElementById("output")
-output.innerHTML = 'The generated array is ' + arr 
+output.innerHTML = 'The generated array is ' + arr;
+
+const outputSum = document.getElementById("outputSum")
+outputSum.innerHTML = 'The sum is ' + total
+
+
