@@ -15,9 +15,9 @@ var arr = [];
 for (var i = min; i <= max; i=i+step)
     arr.push(i);
 
-var total=0;
+var totalSum=0;
 for (var i in arr){
-total +=arr[i];
+totalSum +=arr[i];
 }
 
 var binArr =[];
@@ -26,7 +26,7 @@ for (var i=0, len=arr.length; i<len; i++) {
 }
 
 document.write('The generated array is ' + arr  + '<br>') ; 
-document.write('The sum is ' + total + '<br>' ); 
+document.write('The sum is ' + totalSum + '<br>' ); 
 document.write('The binary of absolute element values are: ' + binArr);
 // const output2 = document.getElementById("output2")
 // output2.innerHTML = 'The sum is ' + total;
